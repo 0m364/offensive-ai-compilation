@@ -15,12 +15,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
     <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>
-        addBackToTop({
-            diameter: 56,
-            textColor: '#fff'
-        })
-    </script>
+    <script src="{{ '/assets/js/back-to-top.js' | relative_url }}"></script>
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
